@@ -809,16 +809,16 @@ void LTE_fdd_enb_mme::parse_tau_request(LIBLTE_BYTE_MSG_STRUCT  *msg,
                                                     LIBLTE_SECURITY_DIRECTION_DOWNLINK,
                                                     msg);
     // Queue the NAS message for RRC
-    rb->queue_rrc_nas_msg(msg);
+    (*rb)->queue_rrc_nas_msg(msg);
     // Signal RRC for NAS message
     nas_msg_ready.user = user;
-    nas_msg_ready.rb   = rb;
+    nas_msg_ready.rb   = (*rb);
     msgq_to_rrc->send(LTE_FDD_ENB_MESSAGE_TYPE_RRC_NAS_MSG_READY,
                       LTE_FDD_ENB_DEST_LAYER_RRC,
                       (LTE_FDD_ENB_MESSAGE_UNION *)&nas_msg_ready,
                       sizeof(LTE_FDD_ENB_RRC_NAS_MSG_READY_MSG_STRUCT));
 
-    send_rrc_command(user, rb, LTE_FDD_ENB_RRC_CMD_RELEASE);
+    send_rrc_command(user, (*rb), LTE_FDD_ENB_RRC_CMD_RELEASE);
 }
 void LTE_fdd_enb_mme::parse_identity_response(LIBLTE_BYTE_MSG_STRUCT *msg,
                                               LTE_fdd_enb_user       *user,

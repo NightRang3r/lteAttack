@@ -113,7 +113,7 @@ private:
     void parse_security_mode_complete(LIBLTE_BYTE_MSG_STRUCT *msg, LTE_fdd_enb_user *user, LTE_fdd_enb_rb *rb);
     void parse_security_mode_reject(LIBLTE_BYTE_MSG_STRUCT *msg, LTE_fdd_enb_user *user, LTE_fdd_enb_rb *rb);
     void parse_tau_request(LIBLTE_BYTE_MSG_STRUCT  *msg,
-                                            LTE_fdd_enb_user        **user,
+                                            LTE_fdd_enb_user        *user,
                                             LTE_fdd_enb_rb          **rb);
     void parse_service_request(LIBLTE_BYTE_MSG_STRUCT *msg, LTE_fdd_enb_user *user, LTE_fdd_enb_rb *rb);
     void parse_activate_default_eps_bearer_context_accept(LIBLTE_BYTE_MSG_STRUCT *msg, LTE_fdd_enb_user *user, LTE_fdd_enb_rb *rb);
