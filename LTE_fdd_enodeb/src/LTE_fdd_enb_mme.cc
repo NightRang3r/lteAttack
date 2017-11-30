@@ -801,7 +801,7 @@ void LTE_fdd_enb_mme::parse_tau_request(LIBLTE_BYTE_MSG_STRUCT  *msg,
     (user)->set_emm_cause(LIBLTE_MME_EMM_CAUSE_UE_IDENTITY_CANNOT_BE_DERIVED_BY_THE_NETWORK);
     track_rej.emm_cause = (user)->get_emm_cause();
     track_rej.t3446_present = false;
-    sec_hdr_type = (msg->msg[0] & 0xF0) >> 4;
+    sec_hdr_type = LIBLTE_MME_MSG_TYPE_TRACKING_AREA_UPDATE_REJECT;
     liblte_mme_pack_tracking_area_update_reject_msg(&track_rej,
                                                     sec_hdr_type,
                                                     (user)->get_auth_vec()->k_nas_int,
