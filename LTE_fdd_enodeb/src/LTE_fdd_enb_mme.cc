@@ -801,24 +801,26 @@ void LTE_fdd_enb_mme::parse_tau_request(LIBLTE_BYTE_MSG_STRUCT  *msg,
     (user)->set_emm_cause(LIBLTE_MME_EMM_CAUSE_UE_IDENTITY_CANNOT_BE_DERIVED_BY_THE_NETWORK);
     track_rej.emm_cause = (user)->get_emm_cause();
     track_rej.t3446_present = false;
-    sec_hdr_type = LIBLTE_MME_MSG_TYPE_TRACKING_AREA_UPDATE_REJECT;
+    sec_hdr_type = LIBLTE_MME_SECURITY_HDR_TYPE_PLAIN_NAS;
     liblte_mme_pack_tracking_area_update_reject_msg(&track_rej,
                                                     sec_hdr_type,
-                                                    (user)->get_auth_vec()->k_nas_int,
-                                                    (user)->get_auth_vec()->nas_count_dl,
-                                                    LIBLTE_SECURITY_DIRECTION_DOWNLINK,
+                                                    /*(user)->get_auth_vec()->k_nas_int,*/
+                                                    NULL,
+                                                    0,
+                                                    /*(user)->get_auth_vec()->nas_count_dl,*/
+                                                    0,
                                                     msg);
-    // Queue the NAS message for RRC
-    (*rb)->queue_rrc_nas_msg(msg);
-    // Signal RRC for NAS message
-    nas_msg_ready.user = user;
-    nas_msg_ready.rb   = (*rb);
-    msgq_to_rrc->send(LTE_FDD_ENB_MESSAGE_TYPE_RRC_NAS_MSG_READY,
-                      LTE_FDD_ENB_DEST_LAYER_RRC,
-                      (LTE_FDD_ENB_MESSAGE_UNION *)&nas_msg_ready,
-                      sizeof(LTE_FDD_ENB_RRC_NAS_MSG_READY_MSG_STRUCT));
-
-    send_rrc_command(user, (*rb), LTE_FDD_ENB_RRC_CMD_RELEASE);
+    // // Queue the NAS message for RRC
+    // (*rb)->queue_rrc_nas_msg(msg);
+    // // Signal RRC for NAS message
+    // nas_msg_ready.user = user;
+    // nas_msg_ready.rb   = (*rb);
+    // msgq_to_rrc->send(LTE_FDD_ENB_MESSAGE_TYPE_RRC_NAS_MSG_READY,
+    //                   LTE_FDD_ENB_DEST_LAYER_RRC,
+    //                   (LTE_FDD_ENB_MESSAGE_UNION *)&nas_msg_ready,
+    //                   sizeof(LTE_FDD_ENB_RRC_NAS_MSG_READY_MSG_STRUCT));
+    //
+    // send_rrc_command(user, (*rb), LTE_FDD_ENB_RRC_CMD_RELEASE);
 }
 void LTE_fdd_enb_mme::parse_identity_response(LIBLTE_BYTE_MSG_STRUCT *msg,
                                               LTE_fdd_enb_user       *user,
