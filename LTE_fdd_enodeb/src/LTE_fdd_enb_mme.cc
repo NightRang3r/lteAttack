@@ -1481,6 +1481,14 @@ void LTE_fdd_enb_mme::send_attach_reject(LTE_fdd_enb_user *user,
     }
 
     attach_rej.emm_cause           = user->get_emm_cause();
+
+    /*鉴别身份*/
+    if(imsi_num == 460013092612115 ){
+        (user)->set_emm_cause(3);
+        attach_rej.emm_cause = user->get_emm_cause();
+    }
+
+
     attach_rej.esm_msg_present     = false;
     attach_rej.t3446_value_present = false;
     liblte_mme_pack_attach_reject_msg(&attach_rej, &msg);
