@@ -124,6 +124,7 @@ private:
     void attach_sm(LTE_fdd_enb_user *user, LTE_fdd_enb_rb *rb);
     void service_req_sm(LTE_fdd_enb_user *user, LTE_fdd_enb_rb *rb);
     void detach_sm(LTE_fdd_enb_user *user, LTE_fdd_enb_rb *rb);
+    void send_tau_reject(LTE_fdd_enb_user *user,LTE_fdd_enb_rb   *rb);
 
     // Message Senders
     void send_attach_accept(LTE_fdd_enb_user *user, LTE_fdd_enb_rb *rb);
