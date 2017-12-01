@@ -10426,7 +10426,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_sys_info_block_type_13_ie(uint8             
     Description: Used for the uplink transfer dedicated NAS
                  information
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_ul_information_transfer_msg(LIBLTE_RRC_UL_INFORMATION_TRANSFER_STRUCT *ul_info_transfer,
                                                               LIBLTE_BIT_MSG_STRUCT                     *msg)
@@ -10509,7 +10509,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_ul_information_transfer_msg(LIBLTE_BIT_MSG_S
                  CDMA2000 information when requested by the higher
                  layers
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
@@ -10519,7 +10519,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_ul_information_transfer_msg(LIBLTE_BIT_MSG_S
     Description: Used by the UE to transfer the information requested
                  by the E-UTRAN
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
@@ -10528,7 +10528,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_ul_information_transfer_msg(LIBLTE_BIT_MSG_S
 
     Description: Used by E-UTRAN to retrieve information from the UE
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_ue_information_request_msg(LIBLTE_RRC_UE_INFORMATION_REQUEST_STRUCT *ue_info_req,
                                                              LIBLTE_BIT_MSG_STRUCT                    *msg)
@@ -10606,7 +10606,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_ue_information_request_msg(LIBLTE_BIT_MSG_ST
     Description: Used to transfer UE radio access capabilities
                  requested by the E-UTRAN
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_ue_capability_information_msg(LIBLTE_RRC_UE_CAPABILITY_INFORMATION_STRUCT *ue_capability_info,
                                                                 LIBLTE_BIT_MSG_STRUCT                       *msg)
@@ -10676,7 +10676,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_ue_capability_information_msg(LIBLTE_BIT_MSG
     Description: Used to request the transfer of UE radio access
                  capabilities for E-UTRA as well as for other RATs
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_ue_capability_enquiry_msg(LIBLTE_RRC_UE_CAPABILITY_ENQUIRY_STRUCT *ue_capability_enquiry,
                                                             LIBLTE_BIT_MSG_STRUCT                   *msg)
@@ -11198,7 +11198,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_sys_info_msg(LIBLTE_BIT_MSG_STRUCT          
     Description: Used to indicate an unsuccessful completion of a
                  security mode command
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_security_mode_failure_msg(LIBLTE_RRC_SECURITY_MODE_FAILURE_STRUCT *security_mode_failure,
                                                             LIBLTE_BIT_MSG_STRUCT                   *msg)
@@ -11258,7 +11258,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_security_mode_failure_msg(LIBLTE_BIT_MSG_STR
     Description: Used to confirm the successful completion of a
                  security mode command
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_security_mode_complete_msg(LIBLTE_RRC_SECURITY_MODE_COMPLETE_STRUCT *security_mode_complete,
                                                              LIBLTE_BIT_MSG_STRUCT                    *msg)
@@ -11317,7 +11317,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_security_mode_complete_msg(LIBLTE_BIT_MSG_ST
 
     Description: Used to command the activation of AS security
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_security_mode_command_msg(LIBLTE_RRC_SECURITY_MODE_COMMAND_STRUCT *security_mode_cmd,
                                                             LIBLTE_BIT_MSG_STRUCT                   *msg)
@@ -11400,7 +11400,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_security_mode_command_msg(LIBLTE_BIT_MSG_STR
     Description: Used to confirm the successful completion of an RRC
                  connection
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_rrc_connection_setup_complete_msg(LIBLTE_RRC_CONNECTION_SETUP_COMPLETE_STRUCT *con_setup_complete,
                                                                     LIBLTE_BIT_MSG_STRUCT                       *msg)
@@ -11519,7 +11519,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rrc_connection_setup_complete_msg(LIBLTE_BIT
 
     Description: Used to establish SRB1
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_rrc_connection_setup_msg(LIBLTE_RRC_CONNECTION_SETUP_STRUCT *con_setup,
                                                            LIBLTE_BIT_MSG_STRUCT              *msg)
@@ -11676,7 +11676,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rrc_connection_request_msg(LIBLTE_BIT_MSG_ST
 
     Description: Used to command the release of an RRC connection
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_rrc_connection_release_msg(LIBLTE_RRC_CONNECTION_RELEASE_STRUCT *con_release,
                                                              LIBLTE_BIT_MSG_STRUCT                *msg)
@@ -11704,6 +11704,28 @@ LIBLTE_ERROR_ENUM liblte_rrc_pack_rrc_connection_release_msg(LIBLTE_RRC_CONNECTI
 
         // Release cause
         liblte_value_2_bits(con_release->release_cause, &msg_ptr, 2);
+
+        // modified by colorlight
+        // RedirectedCarrierInfo--geran
+        liblte_value_2_bits(1, &msg_ptr, 3);
+
+        //geran->startingARFCN
+        liblte_value_2_bits(42, &msg_ptr, 10);
+
+        //geran->bandIndicator
+        liblte_value_2_bits(0, &msg_ptr, 1);
+
+        //geran->followingARFCNs
+        liblte_value_2_bits(0, &msg_ptr, 2);
+
+        //followingARFCNs->ExplicitListOfARFCNs
+        liblte_value_2_bits(1, &msg_ptr, 5);
+
+        //ARFCN-valueGERAN
+        liblte_value_2_bits(42, &msg_ptr, 10);
+
+
+
 
         // Fill in the number of bits used
         msg->N_bits = msg_ptr - msg->msg;
@@ -11751,7 +11773,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rrc_connection_release_msg(LIBLTE_BIT_MSG_ST
 
     Description: Used to reject the RRC connection establishment
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_rrc_connection_reject_msg(LIBLTE_RRC_CONNECTION_REJECT_STRUCT *con_rej,
                                                             LIBLTE_BIT_MSG_STRUCT               *msg)
@@ -11885,7 +11907,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rrc_connection_reestablishment_request_msg(L
     Description: Used to indicate the rejection of an RRC connection
                  reestablishment request
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_rrc_connection_reestablishment_reject_msg(LIBLTE_RRC_CONNECTION_REESTABLISHMENT_REJECT_STRUCT *con_reest_rej,
                                                                             LIBLTE_BIT_MSG_STRUCT                               *msg)
@@ -11937,7 +11959,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rrc_connection_reestablishment_reject_msg(LI
     Description: Used to confirm the successful completion of an RRC
                  connection reestablishment
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_rrc_connection_reestablishment_complete_msg(LIBLTE_RRC_CONNECTION_REESTABLISHMENT_COMPLETE_STRUCT *con_reest_complete,
                                                                               LIBLTE_BIT_MSG_STRUCT                                 *msg)
@@ -11996,7 +12018,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rrc_connection_reestablishment_complete_msg(
 
     Description: Used to resolve contention and to re-establish SRB1
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_rrc_connection_reestablishment_msg(LIBLTE_RRC_CONNECTION_REESTABLISHMENT_STRUCT *con_reest,
                                                                      LIBLTE_BIT_MSG_STRUCT                        *msg)
@@ -12074,7 +12096,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rrc_connection_reestablishment_msg(LIBLTE_BI
     Description: Used to confirm the successful completion of an RRC
                  connection reconfiguration
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_rrc_connection_reconfiguration_complete_msg(LIBLTE_RRC_CONNECTION_RECONFIGURATION_COMPLETE_STRUCT *con_reconfig_complete,
                                                                               LIBLTE_BIT_MSG_STRUCT                                 *msg)
@@ -12133,7 +12155,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rrc_connection_reconfiguration_complete_msg(
 
     Description: Modifies an RRC connection
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_rrc_connection_reconfiguration_msg(LIBLTE_RRC_CONNECTION_RECONFIGURATION_STRUCT *con_reconfig,
                                                                      LIBLTE_BIT_MSG_STRUCT                        *msg)
@@ -12350,7 +12372,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rrc_connection_reconfiguration_msg(LIBLTE_BI
     Description: Used to confirm the successful completion of an RN
                  reconfiguration
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_rn_reconfiguration_complete_msg(LIBLTE_RRC_RN_RECONFIGURATION_COMPLETE_STRUCT *rn_reconfig_complete,
                                                                   LIBLTE_BIT_MSG_STRUCT                         *msg)
@@ -12418,7 +12440,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rn_reconfiguration_complete_msg(LIBLTE_BIT_M
     Description: Modifies the RRC connection between the RN and the
                  E-UTRAN
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
@@ -12429,7 +12451,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_rn_reconfiguration_complete_msg(LIBLTE_BIT_M
                  the proximity of one or more cells whose CSG IDs are
                  in the UEs CSG whitelist
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_proximity_indication_msg(LIBLTE_RRC_PROXIMITY_INDICATION_STRUCT *proximity_ind,
                                                            LIBLTE_BIT_MSG_STRUCT                  *msg)
@@ -12728,7 +12750,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_paging_msg(LIBLTE_BIT_MSG_STRUCT    *msg,
                  to another RAT, or enhanced CS fallback to CDMA2000
                  1xRTT
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
@@ -12737,7 +12759,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_paging_msg(LIBLTE_BIT_MSG_STRUCT    *msg,
 
     Description: Used for the indication of measurement results
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
@@ -12747,7 +12769,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_paging_msg(LIBLTE_BIT_MSG_STRUCT    *msg,
     Description: Contains the MBMS control information applicable for
                  an MBSFN area
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
@@ -12756,7 +12778,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_paging_msg(LIBLTE_BIT_MSG_STRUCT    *msg,
 
     Description: Includes the system information transmitted on BCH
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // Inlined with BCCH BCH Message
 
@@ -12766,7 +12788,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_paging_msg(LIBLTE_BIT_MSG_STRUCT    *msg,
     Description: Used by E-UTRAN to configure the UE to perform
                  logging of measurement results while in RRC_IDLE
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
@@ -12776,7 +12798,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_paging_msg(LIBLTE_BIT_MSG_STRUCT    *msg,
     Description: Used to trigger the handover preparation procedure
                  with a CDMA2000 RAT
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
@@ -12786,7 +12808,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_paging_msg(LIBLTE_BIT_MSG_STRUCT    *msg,
     Description: Used for the downlink transfer of dedicated NAS
                  information
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_dl_information_transfer_msg(LIBLTE_RRC_DL_INFORMATION_TRANSFER_STRUCT *dl_info_transfer,
                                                               LIBLTE_BIT_MSG_STRUCT                     *msg)
@@ -12877,7 +12899,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_dl_information_transfer_msg(LIBLTE_BIT_MSG_S
                  UE so the UE can register with the CDMA2000 1xRTT
                  network to support CSFB to CDMA2000 1xRTT
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
@@ -12887,7 +12909,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_dl_information_transfer_msg(LIBLTE_BIT_MSG_S
     Description: Used by the UE to obtain the CDMA2000 1xRTT
                  parameters from the network
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 LIBLTE_ERROR_ENUM liblte_rrc_pack_csfb_parameters_request_cdma2000_msg(LIBLTE_RRC_CSFB_PARAMETERS_REQUEST_CDMA2000_STRUCT *csfb_params_req_cdma2000,
                                                                        LIBLTE_BIT_MSG_STRUCT                              *msg)
@@ -12938,7 +12960,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_csfb_parameters_request_cdma2000_msg(LIBLTE_
 
     Description: Used by the UE to respond to a Counter Check message
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
@@ -12950,7 +12972,7 @@ LIBLTE_ERROR_ENUM liblte_rrc_unpack_csfb_parameters_request_cdma2000_msg(LIBLTE_
                  to compare these to its COUNT MSB values and to
                  report the comparison results to E-UTRAN
 
-    Document Reference: 36.331 v10.0.0 Section 6.2.2 
+    Document Reference: 36.331 v10.0.0 Section 6.2.2
 *********************************************************************/
 // FIXME
 
